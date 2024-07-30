@@ -1,0 +1,38 @@
+[
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "streamlit",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "streamlit",
+        "description": "streamlit",
+        "detail": "streamlit",
+        "documentation": {}
+    },
+    {
+        "label": "iris",
+        "kind": 5,
+        "importPath": "SimpleGraph.main",
+        "description": "SimpleGraph.main",
+        "peekOfCode": "iris = pd.read_csv('../Data/iris(TEST)/iris.csv')\nsns.displot(data = iris, x = \"class\")\nprint(iris)",
+        "detail": "SimpleGraph.main",
+        "documentation": {}
+    },
+    {
+        "label": "sns.displot(data",
+        "kind": 5,
+        "importPath": "SimpleGraph.main",
+        "description": "SimpleGraph.main",
+        "peekOfCode": "sns.displot(data = iris, x = \"class\")\nprint(iris)",
+        "detail": "SimpleGraph.main",
+        "documentation": {}
+    }
+]
