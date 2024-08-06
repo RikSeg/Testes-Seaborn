@@ -1,14 +1,5 @@
 [
     {
-        "label": "pandas",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "pandas",
-        "description": "pandas",
-        "detail": "pandas",
-        "documentation": {}
-    },
-    {
         "label": "streamlit",
         "kind": 6,
         "isExtraImport": true,
@@ -18,21 +9,39 @@
         "documentation": {}
     },
     {
-        "label": "iris",
-        "kind": 5,
-        "importPath": "SimpleGraph.main",
-        "description": "SimpleGraph.main",
-        "peekOfCode": "iris = pd.read_csv('../Data/iris(TEST)/iris.csv')\nsns.displot(data = iris, x = \"class\")\nprint(iris)",
-        "detail": "SimpleGraph.main",
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
         "documentation": {}
     },
     {
-        "label": "sns.displot(data",
-        "kind": 5,
-        "importPath": "SimpleGraph.main",
-        "description": "SimpleGraph.main",
-        "peekOfCode": "sns.displot(data = iris, x = \"class\")\nprint(iris)",
-        "detail": "SimpleGraph.main",
+        "label": "plotly.express",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "plotly.express",
+        "description": "plotly.express",
+        "detail": "plotly.express",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "App.pages.Page1",
+        "description": "App.pages.Page1",
+        "peekOfCode": "def main():\n    st.title(\"Teste do dataset Iris\")\n    data = pd.read_csv('../data/iris(TEST)/iris.csv')\n    st.header('Dataset:')\n    st.write(data)\n    atributo = st.selectbox(\"Selecione o atributo para comparação\", data.columns[:-1])\n    st.header(f\"Gráfico de {atributo} por Espécie\")\n    fig = px.scatter(data, x=atributo, y='species', color='species', title=f'{atributo} vs Espécie')\n    st.plotly_chart(fig)\nif __name__==\"__main__\":",
+        "detail": "App.pages.Page1",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "App.pages.Page2",
+        "description": "App.pages.Page2",
+        "peekOfCode": "def main():\n    st.title(\"Página 2\")\n    st.write(\"Conteúdo da Página 2\")\n    # Coloque aqui o conteúdo da sua página 2\nif __name__==\"__main__\":\n    main()",
+        "detail": "App.pages.Page2",
         "documentation": {}
     }
 ]
